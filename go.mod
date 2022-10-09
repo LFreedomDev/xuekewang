@@ -1,4 +1,4 @@
-module xuekewang
+module git.lfreedom.com/LFreedomDev/xuekewang
 
 go 1.19
 
