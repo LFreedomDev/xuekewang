@@ -1,0 +1,564 @@
+{
+    "code": 2000000,
+    "msg": "OK",
+    "data": [
+        {
+            "id": 1,
+            "name": "小学语文",
+            "stage_id": 2,
+            "subject_id": 1,
+            "ordinal": 1,
+            "create_time": "2019-02-27T10:38:19",
+            "update_time": "2019-02-27T10:38:19"
+        },
+        {
+            "id": 2,
+            "name": "小学数学",
+            "stage_id": 2,
+            "subject_id": 2,
+            "ordinal": 2,
+            "create_time": "2019-02-27T10:38:19",
+            "update_time": "2019-02-27T10:38:19"
+        },
+        {
+            "id": 3,
+            "name": "小学英语",
+            "stage_id": 2,
+            "subject_id": 3,
+            "ordinal": 3,
+            "create_time": "2019-02-27T10:38:19",
+            "update_time": "2019-02-27T10:38:19"
+        },
+        {
+            "id": 4,
+            "name": "小学道德与法治",
+            "stage_id": 2,
+            "subject_id": 7,
+            "ordinal": 4,
+            "create_time": "2019-02-27T10:38:19",
+            "update_time": "2019-02-27T10:38:19"
+        },
+        {
+            "id": 5,
+            "name": "小学科学",
+            "stage_id": 2,
+            "subject_id": 10,
+            "ordinal": 5,
+            "create_time": "2019-02-27T10:38:19",
+            "update_time": "2019-02-27T10:38:19"
+        },
+        {
+            "id": 6,
+            "name": "小学信息技术",
+            "stage_id": 2,
+            "subject_id": 12,
+            "ordinal": 6,
+            "create_time": "2019-02-27T10:38:19",
+            "update_time": "2019-02-27T10:38:19"
+        },
+        {
+            "id": 7,
+            "name": "小学音乐",
+            "stage_id": 2,
+            "subject_id": 13,
+            "ordinal": 7,
+            "create_time": "2019-02-27T10:38:19",
+            "update_time": "2019-02-27T10:38:19"
+        },
+        {
+            "id": 8,
+            "name": "小学美术",
+            "stage_id": 2,
+            "subject_id": 14,
+            "ordinal": 8,
+            "create_time": "2019-02-27T10:38:19",
+            "update_time": "2019-02-27T10:38:19"
+        },
+        {
+            "id": 9,
+            "name": "小学体育",
+            "stage_id": 2,
+            "subject_id": 15,
+            "ordinal": 9,
+            "create_time": "2019-02-27T10:38:19",
+            "update_time": "2019-02-27T10:38:19"
+        },
+        {
+            "id": 41,
+            "name": "小学心理健康",
+            "stage_id": 2,
+            "subject_id": 19,
+            "ordinal": 10,
+            "create_time": "2019-11-22T14:11:39",
+            "update_time": "2022-07-22T10:42:21"
+        },
+        {
+            "id": 42,
+            "name": "小学综合实践活动",
+            "stage_id": 2,
+            "subject_id": 20,
+            "ordinal": 11,
+            "create_time": "2019-11-22T14:12:03",
+            "update_time": "2022-07-22T10:42:34"
+        },
+        {
+            "id": 111,
+            "name": "小学拓展",
+            "stage_id": 2,
+            "subject_id": 18,
+            "ordinal": 12,
+            "create_time": "2019-02-27T10:38:19",
+            "update_time": "2022-07-22T10:42:43"
+        },
+        {
+            "id": 114,
+            "name": "小学书法",
+            "stage_id": 2,
+            "subject_id": 23,
+            "ordinal": 13,
+            "create_time": "2021-08-03T15:29:08",
+            "update_time": "2022-07-22T10:43:10"
+        },
+        {
+            "id": 115,
+            "name": "小学劳动",
+            "stage_id": 2,
+            "subject_id": 17,
+            "ordinal": 14,
+            "create_time": "2022-10-08T17:09:38",
+            "update_time": "2022-10-08T17:09:47"
+        },
+        {
+            "id": 10,
+            "name": "初中语文",
+            "stage_id": 3,
+            "subject_id": 1,
+            "ordinal": 110,
+            "create_time": "2019-02-27T10:38:19",
+            "update_time": "2019-02-27T10:38:19"
+        },
+        {
+            "id": 11,
+            "name": "初中数学",
+            "stage_id": 3,
+            "subject_id": 2,
+            "ordinal": 111,
+            "create_time": "2019-02-27T10:38:19",
+            "update_time": "2019-02-27T10:38:19"
+        },
+        {
+            "id": 12,
+            "name": "初中英语",
+            "stage_id": 3,
+            "subject_id": 3,
+            "ordinal": 112,
+            "create_time": "2019-02-27T10:38:19",
+            "update_time": "2019-02-27T10:38:19"
+        },
+        {
+            "id": 13,
+            "name": "初中物理",
+            "stage_id": 3,
+            "subject_id": 4,
+            "ordinal": 113,
+            "create_time": "2019-02-27T10:38:19",
+            "update_time": "2019-02-27T10:38:19"
+        },
+        {
+            "id": 14,
+            "name": "初中化学",
+            "stage_id": 3,
+            "subject_id": 5,
+            "ordinal": 114,
+            "create_time": "2019-02-27T10:38:19",
+            "update_time": "2019-02-27T10:38:19"
+        },
+        {
+            "id": 15,
+            "name": "初中生物",
+            "stage_id": 3,
+            "subject_id": 6,
+            "ordinal": 115,
+            "create_time": "2019-02-27T10:38:19",
+            "update_time": "2019-02-27T10:38:19"
+        },
+        {
+            "id": 16,
+            "name": "初中道德与法治",
+            "stage_id": 3,
+            "subject_id": 7,
+            "ordinal": 116,
+            "create_time": "2019-02-27T10:38:19",
+            "update_time": "2019-02-27T10:38:19"
+        },
+        {
+            "id": 17,
+            "name": "初中历史",
+            "stage_id": 3,
+            "subject_id": 8,
+            "ordinal": 117,
+            "create_time": "2019-02-27T10:38:19",
+            "update_time": "2019-02-27T10:38:19"
+        },
+        {
+            "id": 18,
+            "name": "初中地理",
+            "stage_id": 3,
+            "subject_id": 9,
+            "ordinal": 118,
+            "create_time": "2019-02-27T10:38:19",
+            "update_time": "2019-02-27T10:38:19"
+        },
+        {
+            "id": 19,
+            "name": "初中科学",
+            "stage_id": 3,
+            "subject_id": 10,
+            "ordinal": 119,
+            "create_time": "2019-02-27T10:38:19",
+            "update_time": "2019-02-27T12:02:50"
+        },
+        {
+            "id": 21,
+            "name": "初中历史与社会",
+            "stage_id": 3,
+            "subject_id": 11,
+            "ordinal": 120,
+            "create_time": "2019-02-27T10:38:19",
+            "update_time": "2022-07-04T18:19:48"
+        },
+        {
+            "id": 20,
+            "name": "初中信息技术",
+            "stage_id": 3,
+            "subject_id": 12,
+            "ordinal": 121,
+            "create_time": "2019-02-27T10:38:19",
+            "update_time": "2022-07-04T18:19:38"
+        },
+        {
+            "id": 112,
+            "name": "初中拓展",
+            "stage_id": 3,
+            "subject_id": 18,
+            "ordinal": 122,
+            "create_time": "2019-02-27T10:38:19",
+            "update_time": "2022-07-04T18:19:14"
+        },
+        {
+            "id": 22,
+            "name": "初中音乐",
+            "stage_id": 3,
+            "subject_id": 13,
+            "ordinal": 122,
+            "create_time": "2019-02-27T10:38:19",
+            "update_time": "2019-02-27T10:38:19"
+        },
+        {
+            "id": 23,
+            "name": "初中美术",
+            "stage_id": 3,
+            "subject_id": 14,
+            "ordinal": 123,
+            "create_time": "2019-02-27T10:38:19",
+            "update_time": "2019-02-27T10:38:19"
+        },
+        {
+            "id": 24,
+            "name": "初中体育与健康",
+            "stage_id": 3,
+            "subject_id": 15,
+            "ordinal": 124,
+            "create_time": "2019-02-27T10:38:19",
+            "update_time": "2019-02-27T10:38:19"
+        },
+        {
+            "id": 25,
+            "name": "初中劳动技术",
+            "stage_id": 3,
+            "subject_id": 17,
+            "ordinal": 125,
+            "create_time": "2019-02-27T10:38:19",
+            "update_time": "2019-02-27T10:38:19"
+        },
+        {
+            "id": 43,
+            "name": "初中日语",
+            "stage_id": 3,
+            "subject_id": 21,
+            "ordinal": 126,
+            "create_time": "2020-10-20T19:35:12",
+            "update_time": "2020-10-20T19:35:12"
+        },
+        {
+            "id": 45,
+            "name": "初中俄语",
+            "stage_id": 3,
+            "subject_id": 22,
+            "ordinal": 127,
+            "create_time": "2020-12-30T17:58:54",
+            "update_time": "2020-12-30T17:58:54"
+        },
+        {
+            "id": 53,
+            "name": "初中社会",
+            "stage_id": 3,
+            "subject_id": 24,
+            "ordinal": 128,
+            "create_time": "2021-12-15T14:09:27",
+            "update_time": "2021-12-15T14:09:27"
+        },
+        {
+            "id": 26,
+            "name": "高中语文",
+            "stage_id": 4,
+            "subject_id": 1,
+            "ordinal": 226,
+            "create_time": "2019-02-27T10:38:19",
+            "update_time": "2019-02-27T10:38:19"
+        },
+        {
+            "id": 27,
+            "name": "高中数学",
+            "stage_id": 4,
+            "subject_id": 2,
+            "ordinal": 227,
+            "create_time": "2019-02-27T10:38:19",
+            "update_time": "2019-02-27T10:38:19"
+        },
+        {
+            "id": 28,
+            "name": "高中英语",
+            "stage_id": 4,
+            "subject_id": 3,
+            "ordinal": 228,
+            "create_time": "2019-02-27T10:38:19",
+            "update_time": "2019-02-27T10:38:19"
+        },
+        {
+            "id": 29,
+            "name": "高中物理",
+            "stage_id": 4,
+            "subject_id": 4,
+            "ordinal": 229,
+            "create_time": "2019-02-27T10:38:19",
+            "update_time": "2019-02-27T10:38:19"
+        },
+        {
+            "id": 30,
+            "name": "高中化学",
+            "stage_id": 4,
+            "subject_id": 5,
+            "ordinal": 230,
+            "create_time": "2019-02-27T10:38:19",
+            "update_time": "2019-02-27T10:38:19"
+        },
+        {
+            "id": 31,
+            "name": "高中生物",
+            "stage_id": 4,
+            "subject_id": 6,
+            "ordinal": 231,
+            "create_time": "2019-02-27T10:38:19",
+            "update_time": "2019-02-27T10:38:19"
+        },
+        {
+            "id": 32,
+            "name": "高中政治",
+            "stage_id": 4,
+            "subject_id": 7,
+            "ordinal": 232,
+            "create_time": "2019-02-27T10:38:19",
+            "update_time": "2019-02-27T10:38:19"
+        },
+        {
+            "id": 33,
+            "name": "高中历史",
+            "stage_id": 4,
+            "subject_id": 8,
+            "ordinal": 233,
+            "create_time": "2019-02-27T10:38:19",
+            "update_time": "2019-02-27T10:38:19"
+        },
+        {
+            "id": 34,
+            "name": "高中地理",
+            "stage_id": 4,
+            "subject_id": 9,
+            "ordinal": 234,
+            "create_time": "2019-02-27T10:38:19",
+            "update_time": "2019-02-27T10:38:19"
+        },
+        {
+            "id": 35,
+            "name": "高中信息技术",
+            "stage_id": 4,
+            "subject_id": 12,
+            "ordinal": 235,
+            "create_time": "2019-02-27T10:38:19",
+            "update_time": "2019-02-27T10:38:19"
+        },
+        {
+            "id": 113,
+            "name": "高中拓展",
+            "stage_id": 4,
+            "subject_id": 18,
+            "ordinal": 235,
+            "create_time": "2019-02-27T10:38:19",
+            "update_time": "2022-07-04T18:20:47"
+        },
+        {
+            "id": 36,
+            "name": "高中音乐",
+            "stage_id": 4,
+            "subject_id": 13,
+            "ordinal": 236,
+            "create_time": "2019-02-27T10:38:19",
+            "update_time": "2019-02-27T10:38:19"
+        },
+        {
+            "id": 37,
+            "name": "高中美术",
+            "stage_id": 4,
+            "subject_id": 14,
+            "ordinal": 237,
+            "create_time": "2019-02-27T10:38:19",
+            "update_time": "2019-02-27T10:38:19"
+        },
+        {
+            "id": 38,
+            "name": "高中体育与健康",
+            "stage_id": 4,
+            "subject_id": 15,
+            "ordinal": 238,
+            "create_time": "2019-02-27T10:38:19",
+            "update_time": "2019-02-27T10:38:19"
+        },
+        {
+            "id": 39,
+            "name": "高中通用技术",
+            "stage_id": 4,
+            "subject_id": 16,
+            "ordinal": 239,
+            "create_time": "2019-02-27T10:38:19",
+            "update_time": "2019-02-27T10:38:19"
+        },
+        {
+            "id": 40,
+            "name": "高中劳动技术",
+            "stage_id": 4,
+            "subject_id": 17,
+            "ordinal": 240,
+            "create_time": "2019-02-27T10:38:19",
+            "update_time": "2019-02-27T10:38:19"
+        },
+        {
+            "id": 44,
+            "name": "高中日语",
+            "stage_id": 4,
+            "subject_id": 21,
+            "ordinal": 242,
+            "create_time": "2020-10-20T19:35:32",
+            "update_time": "2020-10-30T09:40:18"
+        },
+        {
+            "id": 46,
+            "name": "高中俄语",
+            "stage_id": 4,
+            "subject_id": 22,
+            "ordinal": 243,
+            "create_time": "2020-12-30T17:59:17",
+            "update_time": "2020-12-30T17:59:17"
+        },
+        {
+            "id": 50,
+            "name": "中职语文",
+            "stage_id": 6,
+            "subject_id": 1,
+            "ordinal": 301,
+            "create_time": "2021-08-02T13:42:50",
+            "update_time": "2022-07-22T10:44:06"
+        },
+        {
+            "id": 51,
+            "name": "中职数学",
+            "stage_id": 6,
+            "subject_id": 2,
+            "ordinal": 302,
+            "create_time": "2021-08-02T13:43:23",
+            "update_time": "2022-07-22T10:44:12"
+        },
+        {
+            "id": 52,
+            "name": "中职英语",
+            "stage_id": 6,
+            "subject_id": 3,
+            "ordinal": 303,
+            "create_time": "2021-08-02T13:43:44",
+            "update_time": "2022-07-22T10:44:22"
+        },
+        {
+            "id": 55,
+            "name": "中职物理",
+            "stage_id": 6,
+            "subject_id": 4,
+            "ordinal": 305,
+            "create_time": "2022-06-23T10:16:40",
+            "update_time": "2022-07-22T10:44:33"
+        },
+        {
+            "id": 56,
+            "name": "中职化学",
+            "stage_id": 6,
+            "subject_id": 5,
+            "ordinal": 306,
+            "create_time": "2022-06-23T10:18:51",
+            "update_time": "2022-07-22T10:44:39"
+        },
+        {
+            "id": 57,
+            "name": "中职信息技术",
+            "stage_id": 6,
+            "subject_id": 12,
+            "ordinal": 307,
+            "create_time": "2022-06-23T10:20:02",
+            "update_time": "2022-07-22T10:44:51"
+        },
+        {
+            "id": 54,
+            "name": "中职拓展",
+            "stage_id": 6,
+            "subject_id": 18,
+            "ordinal": 308,
+            "create_time": "2022-02-16T10:26:30",
+            "update_time": "2022-07-22T10:45:00"
+        },
+        {
+            "id": 58,
+            "name": "中职专业课",
+            "stage_id": 6,
+            "subject_id": 25,
+            "ordinal": 309,
+            "create_time": "2022-07-04T18:16:38",
+            "update_time": "2022-07-22T10:45:08"
+        },
+        {
+            "id": 59,
+            "name": "中职思想政治",
+            "stage_id": 6,
+            "subject_id": 7,
+            "ordinal": 310,
+            "create_time": "2022-09-19T16:12:44",
+            "update_time": "2022-09-19T16:12:51"
+        },
+        {
+            "id": 60,
+            "name": "中职历史",
+            "stage_id": 6,
+            "subject_id": 8,
+            "ordinal": 311,
+            "create_time": "2022-09-19T16:13:12",
+            "update_time": "2022-09-19T16:13:20"
+        }
+    ]
+}
