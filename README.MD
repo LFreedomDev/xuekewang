@@ -1,6 +1,6 @@
 **使用方法**
 ```go
-import "git.lfreedom.com/LFreedomDev/xuekewang"
+import "github.com/LFreedomDev/xuekewang"
 
 func main(){
     cli := xuekewang.NewSdkClient("appId","appSecret",time.Second*30)

@@ -5,7 +5,7 @@ import (
 	"testing"
 	"time"
 
-	"git.lfreedom.com/LFreedomDev/xuekewang/util/random"
+	"github.com/LFreedomDev/xuekewang/util/random"
 )
 
 func NewDefaultClient() *SdkClient {

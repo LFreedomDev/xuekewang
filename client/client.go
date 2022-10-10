@@ -11,7 +11,7 @@ import (
 	"strings"
 	"time"
 
-	"git.lfreedom.com/LFreedomDev/xuekewang/internal/util/random"
+	"github.com/LFreedomDev/xuekewang/util/random"
 
 	"github.com/golang-module/dongle"
 )
