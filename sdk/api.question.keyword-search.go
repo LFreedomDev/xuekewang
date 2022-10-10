@@ -41,10 +41,10 @@ type QuestionSearchItem struct {
 		Name string `json:"name"` //	名称	string
 		Id   int    `json:"id"`   //	ID	integer
 	} `json:"course"` //	课程	IdNamePair«int»
-	AnswerScoreable int32    `json:"answer_scoreable"` //	在线作答，0=不支持，1=支持。选择题或者打标了机阅的试题	integer(int32)
-	Id              string   `json:"id"`               // 试题ID	string
-	CreateDate      DateTime `json:"create_date"`      //	试题入库日期	string(date-time)
-	Stem            string   `json:"stem"`             //	试题题干（HTML格式），请参考《试题结构和HTML渲染说明文档》	string
+	AnswerScoreable int32  `json:"answer_scoreable"` //	在线作答，0=不支持，1=支持。选择题或者打标了机阅的试题	integer(int32)
+	Id              string `json:"id"`               // 试题ID	string
+	CreateDate      string `json:"create_date"`      //	试题入库日期	string(date-time)
+	Stem            string `json:"stem"`             //	试题题干（HTML格式），请参考《试题结构和HTML渲染说明文档》	string
 }
 
 // 关键词搜题

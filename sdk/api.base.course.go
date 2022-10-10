@@ -4,9 +4,9 @@ type Course struct {
 	// 学科ID
 	SubjectId int32 `json:"subject_id"`
 	// 更新时间
-	UpdateTime DateTime `json:"update_time"`
+	UpdateTime string `json:"update_time"`
 	// 创建时间
-	CreateTime DateTime `json:"create_time"`
+	CreateTime string `json:"create_time"`
 	// 学段ID
 	StageId int32 `json:"stage_id"`
 	// 课程名称

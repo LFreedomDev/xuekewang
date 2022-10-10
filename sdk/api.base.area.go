@@ -1,14 +1,14 @@
 package sdk
 
 type Area struct {
-	Code       string   `json:"code"`        // 行政区标准代码(会随着国家行政区划调整而变化，不建议作为主键使用)
-	CreateTime DateTime `json:"create_time"` // 创建时间
-	Level      string   `json:"level"`       // 行政区级别 可用值: PROVINCE、CITY、COUNTY 分别代表省级、地市级、区县级
-	ParentId   string   `json:"parent_id"`   // 所属行政区ID
-	Name       string   `json:"name"`        // 行政区名称
-	ShortName  string   `json:"short_name"`  // 行政区简称
-	Id         string   `json:"id"`          // 行政区ID(含数字和字母。一旦创建是不会变化的，作为主键使用)
-	Ordinal    int32    `json:"ordinal"`     // 排序值
+	Code       string `json:"code"`        // 行政区标准代码(会随着国家行政区划调整而变化，不建议作为主键使用)
+	CreateTime string `json:"create_time"` // 创建时间
+	Level      string `json:"level"`       // 行政区级别 可用值: PROVINCE、CITY、COUNTY 分别代表省级、地市级、区县级
+	ParentId   string `json:"parent_id"`   // 所属行政区ID
+	Name       string `json:"name"`        // 行政区名称
+	ShortName  string `json:"short_name"`  // 行政区简称
+	Id         string `json:"id"`          // 行政区ID(含数字和字母。一旦创建是不会变化的，作为主键使用)
+	Ordinal    int32  `json:"ordinal"`     // 排序值
 }
 
 // 获取行政区列表
