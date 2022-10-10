@@ -28,8 +28,10 @@ type CourseKnowledgePoint struct {
 // 获取指定课程的知识树
 func (cli *SdkClient) GetCourseKnowledgePoints(opts GetCourseKnowledgePointsParams) (res struct {
 	ApiBaseResult
-	Data []CourseKnowledgePoint
+	Data []CourseKnowledgePoint `json:"data"`
 }, err error) {
-	err = cli.requestJSON("GET", "/xopqbm/courses/knowledge-points", NewApiParamsFromObject(opts), nil, &res)
+	if err = cli.requestJSON("GET", "/xopqbm/courses/knowledge-points", NewApiParamsFromObject(opts), nil, &res); err == nil {
+		err = res.Error()
+	}
 	return
 }

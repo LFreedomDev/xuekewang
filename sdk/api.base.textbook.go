@@ -21,14 +21,16 @@ type GetTextBooksParams struct {
 // 获取教材列表
 func (cli *SdkClient) GetTextBooks(opts GetTextBooksParams) (res struct {
 	ApiBaseResult
-	Data interface{}
+	Data interface{} `json:"data"`
 }, err error) {
-	err = cli.requestJSON("GET", "/xopqbm/textbooks", ApiParams{
+	if err = cli.requestJSON("GET", "/xopqbm/textbooks", ApiParams{
 		"course_id":  opts.CourseId,
 		"grade_id":   opts.GradeId,
 		"page_index": opts.PageIndex,
 		"page_size":  opts.PageSize,
 		"version_id": opts.VersionId,
-	}, nil, &res)
+	}, nil, &res); err == nil {
+		err = res.Error()
+	}
 	return
 }

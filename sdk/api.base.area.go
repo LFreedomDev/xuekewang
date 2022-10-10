@@ -22,9 +22,11 @@ type Area struct {
 //	特别说明：直辖市是省级行政区，为了和省级行政区对齐，市级仍然存储直辖市名称。举例：北京（直辖市）->北京（地市）->东城（区县）。
 func (cli *SdkClient) GetAreasAll() (res struct {
 	ApiBaseResult
-	Data []Area
+	Data []Area `json:"data"`
 }, err error) {
-	err = cli.requestJSON("GET", "/xopqbm/areas/all", nil, nil, &res)
+	if err = cli.requestJSON("GET", "/xopqbm/areas/all", nil, nil, &res); err == nil {
+		err = res.Error()
+	}
 	return
 }
 
@@ -39,6 +41,8 @@ func (cli *SdkClient) GetAreas(opts GetAreasParams) (res struct {
 	ApiBaseResult
 	Data []Area
 }, err error) {
-	err = cli.requestJSON("GET", "/xopqbm/areas", ApiParams{"id": opts.Id}, nil, &res)
+	if err = cli.requestJSON("GET", "/xopqbm/areas", ApiParams{"id": opts.Id}, nil, &res); err == nil {
+		err = res.Error()
+	}
 	return
 }
