@@ -16,6 +16,10 @@ import (
 	"github.com/golang-module/dongle"
 )
 
+func init() {
+	random.Init(time.Now().UnixNano())
+}
+
 type SdkClient struct {
 	appId     string
 	appSecret string
