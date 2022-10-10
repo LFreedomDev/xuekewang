@@ -1,4 +1,4 @@
-package client
+package sdk
 
 type Subject struct {
 	// 学科名称
