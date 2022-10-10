@@ -50,14 +50,10 @@ type QuestionSearchItem struct {
 // 关键词搜题
 //
 //	根据题干的关键词推送相关试题，支持在返回结果中将关键词高亮
-func (cli *SdkClient) QuestionSearch(opts QuestionSearchParams, dataTemplate ...interface{}) (res struct {
+func (cli *SdkClient) QuestionSearch(opts QuestionSearchParams) (res struct {
 	ApiBaseResult
-	Data interface{} `json:"data"`
+	Data []QuestionSearchItem `json:"data"`
 }, err error) {
-	if dataTemplate == nil || len(dataTemplate) <= 0 {
-		dataTemplate = []interface{}{[]QuestionSearchItem{}}
-	}
-	res.Data = dataTemplate[0]
 	if err = cli.requestJSON("POST", "/xopqbm/questions/keyword-search", nil, NewApiParamsFromObject(opts), &res); err == nil {
 		err = res.Error()
 	}

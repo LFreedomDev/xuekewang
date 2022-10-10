@@ -62,14 +62,10 @@ type QuestionPickData struct {
 }
 
 // 章节-知识点挑题
-func (cli *SdkClient) QuestionPick(opts QuestionPickParams, dataTemplate ...interface{}) (res struct {
+func (cli *SdkClient) QuestionPick(opts QuestionPickParams) (res struct {
 	ApiBaseResult
-	Data interface{} `json:"data"`
+	Data QuestionPickData `json:"data"`
 }, err error) {
-	if dataTemplate == nil || len(dataTemplate) <= 0 {
-		dataTemplate = []interface{}{QuestionPickData{}}
-	}
-	res.Data = dataTemplate[0]
 	if err = cli.requestJSON("POST", "/xopqbm/questions/pick", nil, NewApiParamsFromObject(opts), &res); err == nil {
 		err = res.Error()
 	}

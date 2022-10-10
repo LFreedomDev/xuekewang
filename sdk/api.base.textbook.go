@@ -19,14 +19,10 @@ type GetTextBooksParams struct {
 }
 
 // 获取教材列表
-func (cli *SdkClient) GetTextBooks(opts GetTextBooksParams, dataTemplate ...interface{}) (res struct {
+func (cli *SdkClient) GetTextBooks(opts GetTextBooksParams) (res struct {
 	ApiBaseResult
 	Data interface{} `json:"data"`
 }, err error) {
-	if dataTemplate == nil || len(dataTemplate) <= 0 {
-		dataTemplate = []interface{}{map[string]interface{}{}}
-	}
-	res.Data = dataTemplate[0]
 	if err = cli.requestJSON("GET", "/xopqbm/textbooks", ApiParams{
 		"course_id":  opts.CourseId,
 		"grade_id":   opts.GradeId,

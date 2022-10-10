@@ -16,14 +16,10 @@ type Area struct {
 //	提供行政区、行政区级别和学科网定制行政区（比如全国一、全国二等）的数据查询接口。
 //	行政区数据以树形结构存储，分为3个级别，省(直辖市)/地市/区县。其中省市县的编码为6位。比如北京市的编码为110000。
 //	特别说明：直辖市是省级行政区，为了和省级行政区对齐，市级仍然存储直辖市名称。举例：北京（直辖市）->北京（地市）->东城（区县）。
-func (cli *SdkClient) GetAreasAll(dataTemplate ...interface{}) (res struct {
+func (cli *SdkClient) GetAreasAll() (res struct {
 	ApiBaseResult
-	Data interface{} `json:"data"`
+	Data []Area `json:"data"`
 }, err error) {
-	if dataTemplate == nil || len(dataTemplate) <= 0 {
-		dataTemplate = []interface{}{[]Area{}}
-	}
-	res.Data = dataTemplate[0]
 	if err = cli.requestJSON("GET", "/xopqbm/areas/all", nil, nil, &res); err == nil {
 		err = res.Error()
 	}
@@ -37,14 +33,10 @@ type GetAreasParams struct {
 }
 
 // 获取指定ID的行政区
-func (cli *SdkClient) GetAreas(opts GetAreasParams, dataTemplate ...interface{}) (res struct {
+func (cli *SdkClient) GetAreas(opts GetAreasParams) (res struct {
 	ApiBaseResult
-	Data interface{} `json:"data"`
+	Data []Area `json:"data"`
 }, err error) {
-	if dataTemplate == nil || len(dataTemplate) <= 0 {
-		dataTemplate = []interface{}{[]Area{}}
-	}
-	res.Data = dataTemplate[0]
 	if err = cli.requestJSON("GET", "/xopqbm/areas", ApiParams{"id": opts.Id}, nil, &res); err == nil {
 		err = res.Error()
 	}

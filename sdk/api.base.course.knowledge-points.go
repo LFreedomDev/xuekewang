@@ -24,14 +24,10 @@ type CourseKnowledgePoint struct {
 }
 
 // 获取指定课程的知识树
-func (cli *SdkClient) GetCourseKnowledgePoints(opts GetCourseKnowledgePointsParams, dataTemplate ...interface{}) (res struct {
+func (cli *SdkClient) GetCourseKnowledgePoints(opts GetCourseKnowledgePointsParams) (res struct {
 	ApiBaseResult
-	Data interface{} `json:"data"`
+	Data []CourseKnowledgePoint `json:"data"`
 }, err error) {
-	if dataTemplate == nil || len(dataTemplate) <= 0 {
-		dataTemplate = []interface{}{[]CourseKnowledgePoint{}}
-	}
-	res.Data = dataTemplate[0]
 	if err = cli.requestJSON("GET", "/xopqbm/courses/knowledge-points", NewApiParamsFromObject(opts), nil, &res); err == nil {
 		err = res.Error()
 	}

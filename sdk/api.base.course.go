@@ -18,14 +18,10 @@ type Course struct {
 }
 
 // 获取课程列表
-func (cli *SdkClient) GetCoursesAll(dataTemplate ...interface{}) (res struct {
+func (cli *SdkClient) GetCoursesAll() (res struct {
 	ApiBaseResult
-	Data interface{} `json:"data"`
+	Data []Course `json:"data"`
 }, err error) {
-	if dataTemplate == nil || len(dataTemplate) <= 0 {
-		dataTemplate = []interface{}{[]Course{}}
-	}
-	res.Data = dataTemplate[0]
 	if err = cli.requestJSON("GET", "/xopqbm/courses/all", nil, nil, &res); err == nil {
 		err = res.Error()
 	}
@@ -39,14 +35,10 @@ type GetCourseParams struct {
 }
 
 // 获取指定ID的课程
-func (cli *SdkClient) GetCourses(opts GetCourseParams, dataTemplate ...interface{}) (res struct {
+func (cli *SdkClient) GetCourses(opts GetCourseParams) (res struct {
 	ApiBaseResult
-	Data interface{} `json:"data"`
+	Data Course `json:"data"`
 }, err error) {
-	if dataTemplate == nil || len(dataTemplate) <= 0 {
-		dataTemplate = []interface{}{Course{}}
-	}
-	res.Data = dataTemplate[0]
 	if err = cli.requestJSON("GET", "/xopqbm/courses", ApiParams{"id": opts.Id}, nil, &res); err == nil {
 		err = res.Error()
 	}
