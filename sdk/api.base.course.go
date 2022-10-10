@@ -1,14 +1,12 @@
 package sdk
 
-import "time"
-
 type Course struct {
 	// 学科ID
 	SubjectId int32 `json:"subject_id"`
 	// 更新时间
-	UpdateTime time.Time `json:"update_time"`
+	UpdateTime DateTime `json:"update_time"`
 	// 创建时间
-	CreateTime time.Time `json:"create_time"`
+	CreateTime DateTime `json:"create_time"`
 	// 学段ID
 	StageId int32 `json:"stage_id"`
 	// 课程名称

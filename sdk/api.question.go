@@ -1,9 +1,5 @@
 package sdk
 
-import (
-	"time"
-)
-
 // 章节知识点挑题接口请求参数（JSON格式），最大允许返回前100条数据
 type QuestionPickParams struct {
 	CourseId         int32   `json:"course_id"`          // 课程ID   是否必须:false 数据类型:integer(int32)
@@ -63,9 +59,9 @@ type QuestionPickData struct {
 			Id   int    `json:"id"`   //	ID	integer
 		} `json:"course"` //	课程	IdNamePair«int»
 
-		AnswerScoreable int32     `json:"answer_scoreable"` //	在线作答，0=不支持，1=支持。选择题或者打标了机阅的试题	integer(int32)
-		CreateDate      time.Time `json:"create_date"`      //	试题入库日期	string(date-time)
-		Stem            string    `json:"stem"`             //	试题题干（HTML格式），请参考《试题结构和HTML渲染说明文档》	string
+		AnswerScoreable int32    `json:"answer_scoreable"` //	在线作答，0=不支持，1=支持。选择题或者打标了机阅的试题	integer(int32)
+		CreateDate      DateTime `json:"create_date"`      //	试题入库日期	string(date-time)
+		Stem            string   `json:"stem"`             //	试题题干（HTML格式），请参考《试题结构和HTML渲染说明文档》	string
 	} `json:"items"` //	本页数据	array
 }
 
