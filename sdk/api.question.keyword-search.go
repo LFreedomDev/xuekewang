@@ -52,7 +52,7 @@ type QuestionSearchItem struct {
 //	根据题干的关键词推送相关试题，支持在返回结果中将关键词高亮
 func (cli *SdkClient) QuestionSearch(opts QuestionSearchParams, dataTemplate ...interface{}) (res struct {
 	ApiBaseResult
-	Data interface{}
+	Data interface{} `json:"data"`
 }, err error) {
 	if dataTemplate == nil || len(dataTemplate) <= 0 {
 		dataTemplate = []interface{}{[]QuestionSearchItem{}}

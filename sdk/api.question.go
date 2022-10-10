@@ -64,7 +64,7 @@ type QuestionPickData struct {
 // 章节-知识点挑题
 func (cli *SdkClient) QuestionPick(opts QuestionPickParams, dataTemplate ...interface{}) (res struct {
 	ApiBaseResult
-	Data interface{}
+	Data interface{} `json:"data"`
 }, err error) {
 	if dataTemplate == nil || len(dataTemplate) <= 0 {
 		dataTemplate = []interface{}{QuestionPickData{}}

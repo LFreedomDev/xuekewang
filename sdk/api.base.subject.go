@@ -12,7 +12,7 @@ type Subject struct {
 // 获取学科列表
 func (cli *SdkClient) GetSubjects(dataTemplate ...interface{}) (res struct {
 	ApiBaseResult
-	Data interface{}
+	Data interface{} `json:"data"`
 }, err error) {
 	if dataTemplate == nil || len(dataTemplate) <= 0 {
 		dataTemplate = []interface{}{[]Subject{}}

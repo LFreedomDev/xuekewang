@@ -20,7 +20,7 @@ type Course struct {
 // 获取课程列表
 func (cli *SdkClient) GetCoursesAll(dataTemplate ...interface{}) (res struct {
 	ApiBaseResult
-	Data interface{}
+	Data interface{} `json:"data"`
 }, err error) {
 	if dataTemplate == nil || len(dataTemplate) <= 0 {
 		dataTemplate = []interface{}{[]Course{}}
@@ -41,7 +41,7 @@ type GetCourseParams struct {
 // 获取指定ID的课程
 func (cli *SdkClient) GetCourses(opts GetCourseParams, dataTemplate ...interface{}) (res struct {
 	ApiBaseResult
-	Data interface{}
+	Data interface{} `json:"data"`
 }, err error) {
 	if dataTemplate == nil || len(dataTemplate) <= 0 {
 		dataTemplate = []interface{}{Course{}}

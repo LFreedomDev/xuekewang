@@ -21,7 +21,7 @@ type GetTextBooksParams struct {
 // 获取教材列表
 func (cli *SdkClient) GetTextBooks(opts GetTextBooksParams, dataTemplate ...interface{}) (res struct {
 	ApiBaseResult
-	Data interface{}
+	Data interface{} `json:"data"`
 }, err error) {
 	if dataTemplate == nil || len(dataTemplate) <= 0 {
 		dataTemplate = []interface{}{map[string]interface{}{}}
