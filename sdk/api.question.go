@@ -36,7 +36,6 @@ type QuestionPickData struct {
 			Name string `json:"name"` //	名称	string
 			Id   string `json:"id"`   //	ID	string
 		} `json:"type"` //	试题类型	IdNamePair«string»
-
 		CatalogIds   []int32 `json:"catalog_ids"` //	教材目录ID列表	array
 		Years        []int32 `json:"years"`       //	试题出现在试卷中的年份，可能多个	array
 		SourcePapers []struct {
@@ -47,18 +46,15 @@ type QuestionPickData struct {
 			Title string `json:"title"` //	试卷名称	string
 
 		} `json:"source_papers"` //	来源试卷所在地区列表	array
-
 		Difficulty int32 `json:"difficulty"` //	试题难度，0~1之间的数字，值越小难度越大（(0.9,1] 容易，(0.8,0.9] 较易，(0.5,0.8] 一般，(0.3,0.5] 较难，[0, 0.3] 困难）	number(double)
 		Catalogs   []struct {
 			Name string `json:"name"` //	名称	string
 			Id   int    `json:"id"`   //	ID	integer
 		} `json:"catalogs"` //	教材目录列表	array
-
 		Course struct {
 			Name string `json:"name"` //	名称	string
 			Id   int    `json:"id"`   //	ID	integer
 		} `json:"course"` //	课程	IdNamePair«int»
-
 		AnswerScoreable int32    `json:"answer_scoreable"` //	在线作答，0=不支持，1=支持。选择题或者打标了机阅的试题	integer(int32)
 		CreateDate      DateTime `json:"create_date"`      //	试题入库日期	string(date-time)
 		Stem            string   `json:"stem"`             //	试题题干（HTML格式），请参考《试题结构和HTML渲染说明文档》	string
