@@ -10,10 +10,14 @@ type Subject struct {
 }
 
 // 获取学科列表
-func (cli *SdkClient) GetSubjects() (res struct {
+func (cli *SdkClient) GetSubjects(dataTemplate ...interface{}) (res struct {
 	ApiBaseResult
-	Data []Subject `json:"data"`
+	Data interface{}
 }, err error) {
+	if dataTemplate == nil || len(dataTemplate) <= 0 {
+		dataTemplate = []interface{}{[]Subject{}}
+	}
+	res.Data = dataTemplate[0]
 	if err = cli.requestJSON("GET", "/xopqbm/subjects", nil, nil, &res); err == nil {
 		err = res.Error()
 	}
